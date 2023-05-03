@@ -1,0 +1,12 @@
+{
+  "name": "ETracking",
+  "displayName": "ETracking",
+  "android":{
+    "package": "com.etracking"
+  },
+  "extra": {
+    "eas": {
+      "projectId": "a20447c8-e077-4c6f-a278-b1f1cbbc8624"
+    }
+  }
+}
