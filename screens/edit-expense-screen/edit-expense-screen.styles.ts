@@ -16,7 +16,7 @@ export default StyleSheet.create({
     alignItems:'center'
   },
   buttonBox:{
-    marginTop:'70%',
+    marginTop:'60%',
     alignItems:'center',
     rowGap:10
   }

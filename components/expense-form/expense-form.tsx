@@ -40,9 +40,7 @@ const ExpenseForm = ({
         onChangeText={date => onDataChange({date: date.trim()})}
         invalid={!isDateValid}
       />
-      {React.Children.map(children, (child: any) =>
-        React.cloneElement(child, {}),
-      )}
+      {children}
     </Box>
   );
 };
