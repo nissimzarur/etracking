@@ -7,7 +7,6 @@ function useSaveUserName({navigation}: {navigation: any}) {
 
   const handleStoreFullname = () => {
     if (!fullname) return;
-    AsyncStorage.setItem('userFullName', fullname);
     AuthStore.setUsername(fullname);
     navigation.replace('Main');
   };

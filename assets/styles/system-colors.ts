@@ -17,6 +17,19 @@ export default {
   },
   button:{
     background:'#5B58AD',
-    text:'#FFFFFF'
-  }
+    text:'#FFFFFF',
+    disabled:'grey',
+    delete:'red'
+  },
+  section:{
+    header:{
+      background:'#F4EEEE'
+    }
+  },
+  filter:{
+    background:'#D9D9D9'
+  },
+  text:'#000000',
+  primary:'#5B58AD',
+  invalid:'red'
 };

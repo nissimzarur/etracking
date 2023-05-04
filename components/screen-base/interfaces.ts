@@ -1,3 +1,3 @@
-import { PropsWithChildren } from "react";
+import { SafeAreaViewProps } from "react-native-safe-area-context";
 
-export type ScreenProps = PropsWithChildren;
+export type ScreenProps = SafeAreaViewProps;

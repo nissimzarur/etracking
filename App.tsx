@@ -14,9 +14,11 @@ import MainScreen from './screens/main-screen/main-screen';
 import systemColors from './assets/styles/system-colors';
 import CreateExpenseScreen from './screens/create-expense-screen/create-expense-screen';
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import AuthStore from "@tracking/stores/auth-store";
-import { observer } from 'mobx-react';
-import { toJS } from 'mobx';
+import AuthStore from '@tracking/stores/auth-store';
+import {observer} from 'mobx-react';
+import {toJS} from 'mobx';
+import FiltersScreen from './screens/filters-screen/filters-screen';
+import EditExpenseScreen from './screens/edit-expense-screen/edit-expense-screen';
 
 const Stack = createNativeStackNavigator();
 
@@ -44,6 +46,19 @@ function App(): JSX.Element {
         <Stack.Screen
           name="CreateExpense"
           component={CreateExpenseScreen}
+          options={{presentation: 'modal'}}
+        />
+        <Stack.Screen
+          name="Filters"
+          component={FiltersScreen}
+          options={{
+            presentation: 'transparentModal',
+            contentStyle: {backgroundColor: 'transparent'},
+          }}
+        />
+        <Stack.Screen
+          name="EditExpense"
+          component={EditExpenseScreen}
           options={{presentation: 'modal'}}
         />
       </Stack.Navigator>

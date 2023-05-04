@@ -1,9 +1,9 @@
 import React, {useEffect} from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
-import Box from '@tracking/components/controllers/Box/box';
-import TextInput from '@tracking/components/controllers/TextInput/text-input';
+import Box from '@tracking/components/controllers/box/box';
+import TextInput from '@tracking/components/controllers/text-input/text-input';
 import Styles from './welcome-screen.styles';
-import Button from '@tracking/components/controllers/Button/button';
+import Button from '@tracking/components/controllers/button/button';
 import useSaveUserName from './hooks/useSaveUserName';
 
 const WelcomeScreen = ({navigation}:{navigation:any}) => {

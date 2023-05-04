@@ -14,5 +14,11 @@ export default StyleSheet.create({
     fontSize: 16,
     color:systemColors.button.text,
     fontWeight:'700',
+  },
+  buttonDiabled:{
+    backgroundColor:systemColors.button.disabled
+  },
+  delete:{
+    backgroundColor: systemColors.button.delete
   }
 });

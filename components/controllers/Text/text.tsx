@@ -1,16 +1,15 @@
-import {View, Text as RNText, StyleProp, TextStyle} from 'react-native';
+import {Text as RNText, StyleProp, TextStyle} from 'react-native';
 import React from 'react';
 import TextProps from './interfaces';
 import Styles from './styles';
-import systemColors from '@tracking/assets/styles/system-colors';
 
 const Text = ({children, ...props}: TextProps) => {
-  let textStyle: StyleProp<TextStyle> = {...Styles};
+  let textStyle: StyleProp<TextStyle> = {...Styles.text};
 
   const styleProps: any = props.style?.valueOf();
 
   if (styleProps) {
-    textStyle = {...styleProps}
+    textStyle = {...textStyle, ...styleProps};
   }
 
   return (

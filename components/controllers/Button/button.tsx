@@ -9,32 +9,41 @@ import {
 import React from 'react';
 import Styles from './button.styles';
 import ButtonProps from './interfaces';
-import Text from '../Text/text';
+import Text from '../text/text';
 
-const Button = ({children, label, labelProps, ...props}: ButtonProps) => {
-  let buttonStyle: StyleProp<ViewStyle> = {...Styles.button};
+const Button = ({
+  children,
+  label,
+  type = 'primary',
+  labelProps,
+  ...props
+}: ButtonProps) => {
+  let buttonStyle: StyleProp<ViewStyle> = {
+    ...Styles.button, ...(type == 'delete' ? Styles.delete : null),
+  };
   let buttonTextStyle: StyleProp<TextStyle> = {...Styles.buttonText};
+  const isDisabled = props.disabled || false;
+
+  if (isDisabled) buttonStyle = {...buttonStyle, ...Styles.buttonDiabled};
 
   const buttonStyleProps: any = props.style?.valueOf();
-  const textStyleProps: any = labelProps?.style?.valueOf()
+  const textStyleProps: any = labelProps?.style?.valueOf();
 
-  if(buttonStyleProps){
+  if (buttonStyleProps) {
     buttonStyle = {
       ...buttonStyle,
-      ...buttonStyleProps
-    }
+      ...buttonStyleProps,
+    };
   }
-  if(textStyleProps){
+  if (textStyleProps) {
     buttonTextStyle = {
       ...buttonTextStyle,
-      ...textStyleProps
-    }
+      ...textStyleProps,
+    };
   }
-  
+
   return (
-    <TouchableOpacity
-      {...props}
-      style={buttonStyle}>
+    <TouchableOpacity {...props} style={buttonStyle}>
       <Text style={buttonTextStyle}>{label || ''}</Text>
     </TouchableOpacity>
   );
