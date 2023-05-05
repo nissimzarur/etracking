@@ -10,7 +10,7 @@ class AuthStore {
 
   async setUsername(username: string): Promise<void> {
     runInAction(async () => {
-      this.username = username;
+      this.username = username.trim();
       await AsyncStorage.setItem('userFullName', this.username);
     });
   }

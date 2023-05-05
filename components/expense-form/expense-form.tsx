@@ -43,6 +43,7 @@ const ExpenseForm = ({
         defaultValue={data.date}
         onChangeText={date => onDataChange({date: date.trim()})}
         invalid={!isDateValid}
+        keyboardType="phone-pad"
       />
       {children}
     </Box>
