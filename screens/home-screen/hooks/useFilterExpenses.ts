@@ -1,6 +1,10 @@
 import {IExpense, IExpenseBody} from '@tracking/stores/expense-store';
+import FilterStore from '@tracking/stores/filter-store';
+import ExpenseStore from '@tracking/stores/expense-store';
 
-function useFilterExpenses(expenses: IExpense[], filterParams: IExpenseBody) {
+function useFilterExpenses() {
+  const { expenses } = ExpenseStore;
+  const {filterParams} = FilterStore;
   if (!expenses) return [];
   if (!filterParams.title && !filterParams.amount && !filterParams.date)
     return expenses;

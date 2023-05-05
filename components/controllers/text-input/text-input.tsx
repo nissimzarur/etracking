@@ -14,7 +14,7 @@ const TextInput = ({...props}: TextInputProps) => {
     }
   }
 
-  return <RNTextInput {...props} style={style} placeholderTextColor={'#AAA9C0'}/>;
+  return <RNTextInput {...props} style={style} placeholderTextColor={systemColors.textInput.placeholder}/>;
 };
 
 export default TextInput;

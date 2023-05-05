@@ -1,8 +1,6 @@
-import {View, Text, TouchableOpacity, Image} from 'react-native';
+import {View, TouchableOpacity} from 'react-native';
 import React from 'react';
-import Screen from '@tracking/components/screen-base/screen-base';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
-import systemColors from '@tracking/assets/styles/system-colors';
 import {useNavigation} from '@react-navigation/native';
 import Icon from '@tracking/assets/icons/plusIcon.svg';
 import Styles from './main-screen.styles';

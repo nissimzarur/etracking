@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import AuthStore from "@tracking/stores/auth-store";
+import AuthStore from '@tracking/stores/auth-store';
 import {useCallback, useEffect, useState} from 'react';
 
 function useSaveUserName({navigation}: {navigation: any}) {
@@ -20,8 +20,8 @@ function useSaveUserName({navigation}: {navigation: any}) {
     )
       return false;
 
-      AuthStore.setUsername(savedUserFullname);
-      return navigation.replace('Main');
+    AuthStore.setUsername(savedUserFullname);
+    return navigation.replace('Main');
   }, []);
 
   const handleSetFullname = (fullname: string) => {

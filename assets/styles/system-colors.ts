@@ -13,7 +13,8 @@ export default {
   },
   textInput:{
     text:'#000000',
-    border:'#5B58AD'
+    border:'#5B58AD',
+    placeholder:'#AAA9C0'
   },
   button:{
     background:'#5B58AD',

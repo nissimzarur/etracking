@@ -1,4 +1,3 @@
-import AsyncStorage from '@react-native-async-storage/async-storage';
 import {makeAutoObservable, runInAction} from 'mobx';
 import { IExpenseBody } from './expense-store';
 

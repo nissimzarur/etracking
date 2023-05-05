@@ -1,7 +1,8 @@
-import { IExpense } from "@tracking/stores/expense-store";
+import ExpenseStore from '@tracking/stores/expense-store';
 
-function useCalcExpenses(expenses:IExpense[]){
-    
+function useCalcExpenses(){
+    const { expenses } = ExpenseStore;
+
     let totalExpenses = 0;
     if(!expenses || !Array.isArray(expenses) || !expenses.length) return totalExpenses;
 

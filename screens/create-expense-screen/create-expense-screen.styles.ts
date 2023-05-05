@@ -15,11 +15,6 @@ export default StyleSheet.create({
     rowGap:20,
     alignItems:'center'
   },
-  input:{
-    borderWidth:0,
-    borderBottomWidth:1,
-    borderBottomColor:'#696969'
-  },
   buttonBox:{
     marginTop:'70%',
     alignItems:'center',

@@ -31,14 +31,5 @@ export default StyleSheet.create({
     alignSelf: 'center',
     marginTop:'20%',
     marginBottom: 20,
-  },
-  input:{
-    borderWidth:0,
-    borderBottomWidth:1,
-    borderBottomColor:'#696969'
-  },
-  filterBox:{
-    alignItems:'center',
-    justifyContent:'center'
   }
 });

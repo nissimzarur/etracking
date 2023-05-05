@@ -17,7 +17,11 @@ const ExpenseForm = ({
   const isDateValid = useDateValidator(data.date);
 
   useEffect(() => {
-    if (typeof setChildState === 'function') setChildState({isDateValid});
+    const locaState = {
+      isDateValid
+    }
+    
+    if (typeof setChildState === 'function') setChildState({...locaState});
   }, [isDateValid]);
 
   return (

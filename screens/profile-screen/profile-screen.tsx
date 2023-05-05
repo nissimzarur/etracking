@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
 import Box from '@tracking/components/controllers/box/box';
 import {observer} from 'mobx-react';
@@ -11,7 +11,6 @@ import {TouchableOpacity} from 'react-native';
 const ProfileScreen = ({navigation}: any) => {
   const {expensesItems} = useExpenseItems();
   const {signOut} = useSignOut({navigation});
-
 
   return (
     <Screen>

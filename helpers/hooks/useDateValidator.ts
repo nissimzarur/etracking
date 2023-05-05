@@ -1,5 +1,3 @@
-import {useState} from 'react';
-
 function useDateValidator(date: string) {
   if (!date) return true;
 

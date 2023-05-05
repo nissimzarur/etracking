@@ -32,10 +32,10 @@ function useExpensesByDates(expenses: IExpense[]) {
     const [aKey]:any = Object.keys(a)
     const [bKey]:any = Object.keys(b)
 
-    const dateA:any = moment(aKey, 'dd/mm/yyyy');
-    const dateB :any= moment(bKey, 'dd/mm/yyyy');
-
-    return dateA - dateB;
+    const dateA = moment(aKey, 'DD/MM/YYYY').format();
+    const dateB = moment(bKey, 'DD/MM/YYYY').format();
+    
+    return new Date(dateB).getTime() - new Date(dateA).getTime();
   })
 
   return sorted;

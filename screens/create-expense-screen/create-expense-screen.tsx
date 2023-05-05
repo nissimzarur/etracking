@@ -5,7 +5,6 @@ import Box from '@tracking/components/controllers/box/box';
 import Styles from './create-expense-screen.styles';
 import Button from '@tracking/components/controllers/button/button';
 import useCreateExpense from './hooks/useCreateExpense';
-import useDateValidator from '../../helpers/hooks/useDateValidator';
 import ExpenseForm from '@tracking/components/expense-form/expense-form';
 
 const CreateExpenseScreen = ({navigation}: {navigation: any}) => {
