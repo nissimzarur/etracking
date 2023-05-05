@@ -1,6 +1,6 @@
 import {FlatList} from 'react-native';
 import React from 'react';
-import Box from '@tracking/components/controllers/box-temp/box';
+import Box from '@tracking/components/controllers/box/box';
 import ExpensesSectionProps from './interfaces';
 import ExpenseSection from './expense-section/expense-section';
 

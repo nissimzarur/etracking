@@ -9,7 +9,7 @@ import {
 import React from 'react';
 import Styles from './button.styles';
 import ButtonProps from './interfaces';
-import Text from '../text/text';
+import Text from '../text-temp/text';
 
 const Button = ({
   children,

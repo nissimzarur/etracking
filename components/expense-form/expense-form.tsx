@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import Box from '../controllers/box-temp/box';
+import Box from '../controllers/box/box';
 import TextInput from '../controllers/text-input/text-input';
 import DateInput from '../date-input/date-input';
 import Styles from './expense-form.styles';

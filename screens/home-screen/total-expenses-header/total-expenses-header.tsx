@@ -1,7 +1,7 @@
 import React from 'react'
-import Box from '@tracking/components/controllers/box-temp/box'
+import Box from '@tracking/components/controllers/box/box'
 import TotalExpensesHeaderProps from './interfaces'
-import Text from '@tracking/components/controllers/text/text'
+import Text from '@tracking/components/controllers/text-temp/text'
 import Styles from "./total-expenses-header.styles"
 
 const TotalExpensesHeader = ({totalExpenses}:TotalExpensesHeaderProps) => {

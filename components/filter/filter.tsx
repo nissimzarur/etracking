@@ -1,7 +1,7 @@
 import React from 'react';
-import Box from '@tracking/components/controllers/box-temp/box';
+import Box from '@tracking/components/controllers/box/box';
 import FilterIcon from '@tracking/assets/icons/filter.svg';
-import Text from '@tracking/components/controllers/text/text';
+import Text from '@tracking/components/controllers/text-temp/text';
 import Styles from './filter.styles';
 import {StyleProp, TouchableOpacity, ViewStyle} from 'react-native';
 import FilterProps from './interfaces';
