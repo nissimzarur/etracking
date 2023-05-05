@@ -2,7 +2,7 @@ import React from 'react';
 import Box from '@tracking/components/controllers/box/box';
 import Styles from './expense-row.styles';
 import ExpenseRowProps from './interfaces';
-import Text from '@tracking/components/controllers/text-temp/text';
+import Text from '@tracking/components/controllers/text/text';
 import {TouchableOpacity} from 'react-native';
 
 const ExpenseRow = ({handleOnEditPress ,expense}: ExpenseRowProps) => {

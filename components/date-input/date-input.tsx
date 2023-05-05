@@ -1,7 +1,7 @@
 import Box from '../controllers/box/box';
 import Styles from './date-input.styles';
 import DateInputProps from './interfaces';
-import Text from '../controllers/text-temp/text';
+import Text from '../controllers/text/text';
 import TextInput from '../controllers/text-input/text-input';
 
 const DateInput = ({invalid = false, ...props}: DateInputProps) => {

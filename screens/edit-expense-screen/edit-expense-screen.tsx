@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
 import Box from '@tracking/components/controllers/box/box';
-import Text from '@tracking/components/controllers/text-temp/text';
+import Text from '@tracking/components/controllers/text/text';
 import Styles from './edit-expense-screen.styles';
 import ExpenseForm from '@tracking/components/expense-form/expense-form';
 import useEditExpense from './hooks/useEditExpense';
-import Button from '@tracking/components/controllers/button-temp/button';
+import Button from '@tracking/components/controllers/button/button';
 import {observer} from 'mobx-react';
 
 const EditExpenseScreen = ({route, navigation}: any) => {

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
-import Text from '@tracking/components/controllers/text-temp/text';
+import Text from '@tracking/components/controllers/text/text';
 import Box from '@tracking/components/controllers/box/box';
 import Styles from './create-expense-screen.styles';
-import Button from '@tracking/components/controllers/button-temp/button';
+import Button from '@tracking/components/controllers/button/button';
 import useCreateExpense from './hooks/useCreateExpense';
 import ExpenseForm from '@tracking/components/expense-form/expense-form';
 
