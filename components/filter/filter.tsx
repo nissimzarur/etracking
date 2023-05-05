@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import FilterIcon from '@tracking/assets/icons/filter.svg';
 import Text from '@tracking/components/controllers/text/text';
 import Styles from './filter.styles';

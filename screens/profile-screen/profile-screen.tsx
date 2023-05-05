@@ -1,6 +1,6 @@
 import React from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import {observer} from 'mobx-react';
 import useExpenseItems from './hooks/useExpenseItems';
 import Text from '@tracking/components/controllers/text/text';

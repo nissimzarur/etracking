@@ -6,7 +6,7 @@ import TotalExpensesHeader from './total-expenses-header/total-expenses-header';
 import ExpensesSection from './expenses-section/expenses-section';
 import useExpensesByDates from './hooks/useExpensesByDates';
 import Filter from '@tracking/components/filter/filter';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import Styles from "./home-screen.styles"
 import useFilterExpenses from './hooks/useFilterExpenses';
 

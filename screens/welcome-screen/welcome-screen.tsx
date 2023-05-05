@@ -1,6 +1,6 @@
 import React from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import TextInput from '@tracking/components/controllers/text-input/text-input';
 import Styles from './welcome-screen.styles';
 import Button from '@tracking/components/controllers/button/button';

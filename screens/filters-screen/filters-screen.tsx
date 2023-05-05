@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
 import Styles from './filters-screen.styles';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import Text from '@tracking/components/controllers/text/text';
 import {TouchableOpacity, View} from 'react-native';
 import Button from '@tracking/components/controllers/button/button';

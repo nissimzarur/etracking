@@ -1,5 +1,5 @@
 import React from 'react';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import ExpenseSectionProps from './interfaces';
 import Text from '@tracking/components/controllers/text/text';
 import Styles from './expense-section.styles';

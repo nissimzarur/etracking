@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import Screen from '@tracking/components/screen-base/screen-base';
-import Box from '@tracking/components/controllers/box/box';
+import Box from '@tracking/components/controllers/box-temp/box';
 import Text from '@tracking/components/controllers/text/text';
 import Styles from './edit-expense-screen.styles';
 import ExpenseForm from '@tracking/components/expense-form/expense-form';

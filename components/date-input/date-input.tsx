@@ -1,4 +1,4 @@
-import Box from '../controllers/box/box';
+import Box from '../controllers/box-temp/box';
 import Styles from './date-input.styles';
 import DateInputProps from './interfaces';
 import Text from '../controllers/text/text';
